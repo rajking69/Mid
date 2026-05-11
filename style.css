@@ -1,9 +1,9 @@
 :root {
   --ink: #2a1f1b;
   --sand: #f4e8da;
-  --clay: #d9b89e;
+  --clay: #dbcbbe;
   --leaf: #335c49;
-  --sun: #f7c15d;
+  --sun: #d19f42;
   --white: #ffffff;
 }
 
@@ -30,6 +30,7 @@ img {
   margin: 0 auto;
 }
 
+/* Header + navigation layout */
 .site-header {
   background: var(--white);
   position: sticky;
@@ -66,6 +67,7 @@ img {
   color: var(--leaf);
 }
 
+/* Counter card layout */
 .hero {
   padding: 56px 0 32px;
 }
@@ -93,6 +95,7 @@ img {
   margin-bottom: 20px;
 }
 
+/* About card */
 .profile-card {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -132,6 +135,7 @@ img {
   box-shadow: 0 8px 18px rgba(51, 92, 73, 0.25);
 }
 
+/* Skills cards */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -159,6 +163,7 @@ img {
   font-weight: 600;
 }
 
+/*Counter card */
 .counter-card {
   background: var(--white);
   padding: 22px;
@@ -174,6 +179,7 @@ img {
   margin-top: 8px;
 }
 
+/* Contact form */
 form {
   background: var(--white);
   padding: 24px;
@@ -207,12 +213,14 @@ textarea {
   color: #6f5a4c;
 }
 
+/*  Footer */
 .site-footer {
   padding: 24px 0 40px;
   text-align: center;
   font-weight: 600;
 }
 
+/*  Responsive navigation */
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;

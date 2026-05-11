@@ -1,3 +1,4 @@
+// Live/visitor counter
 const counterEl = document.getElementById("liveCounter");
 let counter = 0;
 
@@ -6,6 +7,7 @@ setInterval(() => {
   counterEl.textContent = counter.toString();
 }, 1000);
 
+// Contact form validation
 const messageEl = document.getElementById("message");
 const charCountEl = document.getElementById("charCount");
 const form = document.getElementById("contactForm");
@@ -45,21 +47,28 @@ form.addEventListener("submit", (event) => {
   const emailValue = document.getElementById("email").value.trim();
   const ageValue = document.getElementById("age").value.trim();
   const messageValue = messageEl.value.trim();
-
+  
   if (!nameValue) {
     showError(nameError, "Name cannot be empty.");
     isValid = false;
   }
+
+
+
 
   if (!emailValue || !emailValue.includes("@")) {
     showError(emailError, "Email must contain @.");
     isValid = false;
   }
 
+
   if (!ageValue || isNaN(Number(ageValue))) {
     showError(ageError, "Age must be numeric.");
     isValid = false;
   }
+
+
+
 
   if (!messageValue) {
     showError(messageError, "Message cannot be empty.");
