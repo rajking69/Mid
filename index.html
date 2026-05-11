@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <div class="brand">Amina Khan</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Full Stack Developer</h1>
+          <p>I build clean, responsive web experiences with simple, reliable code.</p>
+        </div>
+        <div class="counter-card" aria-live="polite">
+          <h2>Visitor Counter</h2>
+          <div class="counter-value" id="liveCounter">0</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="profile-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Profile" />
+          <div class="profile-content">
+            <h3>Amina Khan</h3>
+            <p class="role">Web Developer</p>
+            <p>Career objective: craft fast, accessible, and friendly websites for real users.</p>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>HTML</h3>
+            <p>Semantic structure for clean, readable pages.</p>
+          </div>
+          <div class="card">
+            <h3>CSS</h3>
+            <p>Responsive layouts with simple, modern styling.</p>
+          </div>
+          <div class="card">
+            <h3>JavaScript</h3>
+            <p>Dynamic behavior with clear, maintainable code.</p>
+          </div>
+          <div class="card">
+            <h3>Responsive Design</h3>
+            <p>Layouts that work on phones, tablets, and desktops.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+          <div class="project">Portfolio Website</div>
+          <div class="project">Task Manager</div>
+          <div class="project">Cafe Landing Page</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="field">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" placeholder="Your age" />
+            <small class="error" id="ageError"></small>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write a short message"></textarea>
+            <div class="counter-row">
+              <p id="charCount">0 / 1000</p>
+            </div>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Simple Portfolio © 2026</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
